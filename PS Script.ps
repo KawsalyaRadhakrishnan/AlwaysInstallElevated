@@ -1,0 +1,6 @@
+PS Script that enables AlwaysInstallElevated Registry Key
+
+
+reg add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated /t REG_WORD /d 1"
+
+reg add "HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated /t REG_WORD /d 1"
